@@ -1,0 +1,26 @@
+.sphere {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: x-large;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  padding: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.sphere:hover {
+  transform: scale(1.05);
+  background-color: rgba(9, 18, 24, 0.63);
+}
+
+.sphere span {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}

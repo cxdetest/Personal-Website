@@ -1,0 +1,36 @@
+form {
+  display: flex;
+  flex-flow: column wrap;
+  height: 80vh;
+  width: 60%;
+  margin: auto;
+  justify-content: center;
+  row-gap: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  form {
+    width: 90%;
+  }
+}
+
+form input,
+textarea {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: transparent;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+form > input[type='submit']:hover {
+  transform: scale(1.05);
+}
+
+form > input[type='submit'] {
+  background-color: rgba(9, 18, 24, 0.63);
+  cursor: pointer;
+}
+
+textarea {
+  resize: none;
+}

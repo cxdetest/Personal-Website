@@ -1,0 +1,67 @@
+.themeBtn,
+.menuBtn {
+  position: fixed;
+  right: 10%;
+  box-shadow: 0 0 8px rgba(9, 38, 58, 0.418), 0 0 4px rgba(9, 38, 58, 0.226);
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 10px;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  z-index: 999;
+}
+.themeBtn {
+  bottom: 15%;
+}
+.menuBtn {
+  bottom: 5%;
+}
+
+.themeBtn:active,
+.menuBtn:active {
+  animation: rotate 0.5s linear;
+}
+
+.themeBtn:hover,
+.menuBtn:hover {
+  transform: scale(1.05);
+  background-color: rgba(9, 18, 24, 0.63);
+}
+
+@keyframes rotate {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+.menu {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(3px);
+  text-align: center;
+  z-index: 99;
+  background-color: rgba(9, 38, 58, 0.534);
+}
+
+.menu a {
+  display: inline-block;
+  padding: 20px 0;
+  text-shadow: 1px 1px 3px rgba(9, 38, 58, 0.418);
+  width: 100%;
+  color: aliceblue;
+}
+
+.menu a:hover {
+  background-color: rgba(9, 38, 58);
+}
